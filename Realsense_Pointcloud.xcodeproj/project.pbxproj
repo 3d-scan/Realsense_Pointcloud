@@ -11,6 +11,13 @@
 		C60E19581C8A2BE600166040 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E19571C8A2BE600166040 /* main.m */; };
 		C60E195A1C8A2BE600166040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60E19591C8A2BE600166040 /* Assets.xcassets */; };
 		C60E195D1C8A2BE600166040 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60E195B1C8A2BE600166040 /* MainMenu.xib */; };
+		C60E19741C8A2C8200166040 /* Pointcloud.c in Sources */ = {isa = PBXBuildFile; fileRef = C60E19721C8A2C8200166040 /* Pointcloud.c */; };
+		C60E1A991C8A428900166040 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60E1A951C8A428900166040 /* Cocoa.framework */; };
+		C60E1A9A1C8A428900166040 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60E1A961C8A428900166040 /* CoreVideo.framework */; };
+		C60E1A9B1C8A428900166040 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60E1A971C8A428900166040 /* IOKit.framework */; };
+		C60E1A9C1C8A428900166040 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60E1A981C8A428900166040 /* OpenGL.framework */; };
+		C60E1A9F1C8A42A400166040 /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C60E1A9D1C8A42A400166040 /* libglfw3.dylib */; };
+		C60E1AA01C8A42A400166040 /* librealsense.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C60E1A9E1C8A42A400166040 /* librealsense.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,24 @@
 		C60E19591C8A2BE600166040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C60E195C1C8A2BE600166040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C60E195E1C8A2BE600166040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C60E19721C8A2C8200166040 /* Pointcloud.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Pointcloud.c; sourceTree = "<group>"; };
+		C60E19731C8A2C8200166040 /* Pointcloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pointcloud.h; sourceTree = "<group>"; };
+		C60E1A3A1C8A37D800166040 /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
+		C60E1A3B1C8A37D800166040 /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
+		C60E1A3E1C8A37D800166040 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglfw3.a; sourceTree = "<group>"; };
+		C60E1A401C8A37D800166040 /* glfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = glfw3.a; sourceTree = "<group>"; };
+		C60E1A421C8A37D800166040 /* rs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rs.h; sourceTree = "<group>"; };
+		C60E1A431C8A37D800166040 /* rs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rs.hpp; sourceTree = "<group>"; };
+		C60E1A441C8A37D800166040 /* rsutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsutil.h; sourceTree = "<group>"; };
+		C60E1A6E1C8A37D800166040 /* stb_easy_font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_easy_font.h; sourceTree = "<group>"; };
+		C60E1A6F1C8A37D800166040 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		C60E1A701C8A37D800166040 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		C60E1A951C8A428900166040 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Frameworks/Cocoa.framework; sourceTree = "<group>"; };
+		C60E1A961C8A428900166040 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Frameworks/CoreVideo.framework; sourceTree = "<group>"; };
+		C60E1A971C8A428900166040 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Frameworks/IOKit.framework; sourceTree = "<group>"; };
+		C60E1A981C8A428900166040 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		C60E1A9D1C8A42A400166040 /* libglfw3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.dylib; path = Libraries/libglfw3.dylib; sourceTree = "<group>"; };
+		C60E1A9E1C8A42A400166040 /* librealsense.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librealsense.dylib; path = Libraries/librealsense.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +53,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60E1A991C8A428900166040 /* Cocoa.framework in Frameworks */,
+				C60E1AA01C8A42A400166040 /* librealsense.dylib in Frameworks */,
+				C60E1A9F1C8A42A400166040 /* libglfw3.dylib in Frameworks */,
+				C60E1A9C1C8A428900166040 /* OpenGL.framework in Frameworks */,
+				C60E1A9A1C8A428900166040 /* CoreVideo.framework in Frameworks */,
+				C60E1A9B1C8A428900166040 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +68,10 @@
 		C60E19471C8A2BE600166040 = {
 			isa = PBXGroup;
 			children = (
+				C60E198B1C8A2F2B00166040 /* Includes */,
 				C60E19521C8A2BE600166040 /* Realsense_Pointcloud */,
+				C60E196D1C8A2C2A00166040 /* Libraries */,
+				C60E196C1C8A2C0C00166040 /* Frameworks */,
 				C60E19511C8A2BE600166040 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +93,8 @@
 				C60E195B1C8A2BE600166040 /* MainMenu.xib */,
 				C60E195E1C8A2BE600166040 /* Info.plist */,
 				C60E19561C8A2BE600166040 /* Supporting Files */,
+				C60E19721C8A2C8200166040 /* Pointcloud.c */,
+				C60E19731C8A2C8200166040 /* Pointcloud.h */,
 			);
 			path = Realsense_Pointcloud;
 			sourceTree = "<group>";
@@ -69,6 +105,94 @@
 				C60E19571C8A2BE600166040 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C60E196C1C8A2C0C00166040 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A951C8A428900166040 /* Cocoa.framework */,
+				C60E1A961C8A428900166040 /* CoreVideo.framework */,
+				C60E1A971C8A428900166040 /* IOKit.framework */,
+				C60E1A981C8A428900166040 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C60E196D1C8A2C2A00166040 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A9D1C8A42A400166040 /* libglfw3.dylib */,
+				C60E1A9E1C8A42A400166040 /* librealsense.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C60E198B1C8A2F2B00166040 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A391C8A37D800166040 /* GLFW */,
+				C60E1A411C8A37D800166040 /* librealsense */,
+				C60E1A6D1C8A37D800166040 /* third_party */,
+			);
+			name = Includes;
+			sourceTree = "<group>";
+		};
+		C60E1A391C8A37D800166040 /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A3A1C8A37D800166040 /* glfw3.h */,
+				C60E1A3B1C8A37D800166040 /* glfw3native.h */,
+				C60E1A3C1C8A37D800166040 /* lib */,
+			);
+			name = GLFW;
+			path = Includes/GLFW;
+			sourceTree = "<group>";
+		};
+		C60E1A3C1C8A37D800166040 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A3D1C8A37D800166040 /* linux */,
+				C60E1A3F1C8A37D800166040 /* osx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C60E1A3D1C8A37D800166040 /* linux */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A3E1C8A37D800166040 /* libglfw3.a */,
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
+		C60E1A3F1C8A37D800166040 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A401C8A37D800166040 /* glfw3.a */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		C60E1A411C8A37D800166040 /* librealsense */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A421C8A37D800166040 /* rs.h */,
+				C60E1A431C8A37D800166040 /* rs.hpp */,
+				C60E1A441C8A37D800166040 /* rsutil.h */,
+			);
+			name = librealsense;
+			path = Includes/librealsense;
+			sourceTree = "<group>";
+		};
+		C60E1A6D1C8A37D800166040 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1A6E1C8A37D800166040 /* stb_easy_font.h */,
+				C60E1A6F1C8A37D800166040 /* stb_image.h */,
+				C60E1A701C8A37D800166040 /* stb_image_write.h */,
+			);
+			name = third_party;
+			path = Includes/third_party;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C60E19581C8A2BE600166040 /* main.m in Sources */,
+				C60E19741C8A2C8200166040 /* Pointcloud.c in Sources */,
 				C60E19551C8A2BE600166040 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,11 +301,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -195,6 +320,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Includes",
+					/usr/local/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -219,7 +351,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -232,6 +364,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Includes",
+					/usr/local/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -242,9 +381,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Includes",
+					/usr/local/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = Realsense_Pointcloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Includes/GLFW/lib/linux",
+					"$(PROJECT_DIR)/Includes/GLFW/lib/osx",
+					/usr/local/lib,
+					"$(PROJECT_DIR)/build/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/bin/Debug",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "robksawyer.Realsense-Pointcloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -254,9 +416,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Includes",
+					/usr/local/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = Realsense_Pointcloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Includes/GLFW/lib/linux",
+					"$(PROJECT_DIR)/Includes/GLFW/lib/osx",
+					/usr/local/lib,
+					"$(PROJECT_DIR)/build/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/bin/Debug",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "robksawyer.Realsense-Pointcloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
